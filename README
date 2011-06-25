@@ -1,0 +1,27 @@
+The base files for a sensor based garden automation project.
+So far the code is capable of monitoring soil moisture and light levels and
+temperature.
+The actual sensors used are not documented as yet but are essentially voltage
+dividers.
+Image files of these will be posted here at a later date. The project in this
+instance has been created in Eclipse to allow use of the IDE.
+It is set to use a USBTiny hardware programmer rather than USART.
+Further the entire Eclipse settings have been bundled into this repository.
+It is highly likely that the paths to the libraries needed for AVRDude and AVR-C
+and AVR-GCC are going to be different than yours. This was built on a MAc and
+uses CrossPack. http://www.obdev.at/products/crosspack/index.html
+There are further instructions on configuring Eclipse for AVR development here
+http://interactive-matter.eu/how-to/developing-software-for-the-atmel-avr-with-avr-eclipse-avr-gcc-avrdude/
+Bear in mind that the paths will probably be different for you than me.
+The project is written in C and there is a small amount of wheel reinvention
+mainly as I like to poke under the hood and I do not use the Arduino
+environment.
+I intend to add networking capabilities to this project using initially
+JeeNodes and also porting the project to Nanode.
+http://wiki.hackspace.org.uk/wiki/Project:Nanode
+http://jeelabs.net/projects/hardware/wiki/JeeNode
+More documentation will be added as and when, the project is intended to evolve
+into a small 'Kernel' for AVR based sensor based networked projects.
+
+
+
